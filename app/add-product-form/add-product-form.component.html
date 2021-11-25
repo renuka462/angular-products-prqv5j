@@ -1,0 +1,26 @@
+<div class="container">
+  <h3>Product Form</h3>
+  <form (ngSubmit)="onSubmit(productForm)" #productForm="ngForm" [ngFormOptions]="{updateOn: 'blur'}">
+  <div class="form-group">
+    <label for="productname">Product Name:</label>
+    <input type="text" class="form-control" id="productname" name="productname" [(ngModel)]="productName" #prod="ngModel" required
+    [ngModelOptions]="{updateOn: 'blur'}" >
+  </div>
+  <div class="alert alert-danger" [hidden]="prod.valid || prod.pristine">Required Name</div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="text" class="form-control" id="description" name="description" [(ngModel)]="description" #desc="ngModel" required >
+  </div>
+  <div class="alert alert-danger" [hidden]="desc.valid || desc.pristine"></div>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="productimage" name="productimage" [(ngModel)]="productimage"  #prodimg="ngModel" >
+    <label class="custom-file-label" for="productimage">Choose file...</label>
+   
+  </div>
+  <!--button type="submit" class="btn btn-primary" [disabled]="!productForm.valid">Submit</button-->
+  <button type="submit" class="btn btn-primary" >Submit</button>
+</form> 
+</div>
+<div [hidden]="!submitted" class="preview">
+  {{ productForm.value|json}} | {{prodimg.value}}
+</div>

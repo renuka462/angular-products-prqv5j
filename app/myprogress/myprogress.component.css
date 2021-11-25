@@ -1,0 +1,72 @@
+::ng-deep .mat-progress-bar-fill::after {
+    background-color:green;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background:grey}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 2px;
+
+    
+}
+
+::ng-deep .mat-select-arrow {
+  color:transparent;
+   background: url("https://openclipart.org/image/300px/svg_to_png/17019/jean-victor-balin-icon-arrow-right-blue.png") no-repeat right #ffffff;
+}
+.mat-progress-bar {
+    display: block;
+    height: 9px;}
+
+::ng-deep .mat-progress-bar.mat-warn .mat-progress-bar-buffer {
+    background-color:rgb(180, 180, 58);
+}
+
+::ng-deep .mat-progress-bar.mat-warn .mat-progress-bar-fill::after {
+    
+
+}
+
+::ng-deep .orange.mat-progress-bar .mat-progress-bar-fill::after
+{
+  
+background-color:orange;
+  
+}
+
+
+div.networth {
+    width: 100%;
+    
+    margin:2px;
+     border-style: solid;
+    border-width: 1px;
+}
+span.networth-left {
+    width: 70%;
+   
+    display:inline-block;
+  }
+
+span.networth-right {
+    width: 28%;
+    display:inline-block;
+    margin-right:5px;
+    
+}
+
+.card {
+  background: #e2e1e0;
+  border-radius: 2px;
+  display: inline-block;
+  padding:5px;
+  margin: 1rem;
+  position: relative;
+  width: 95%;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.small { vertical-align:top; font-size:9px; }
